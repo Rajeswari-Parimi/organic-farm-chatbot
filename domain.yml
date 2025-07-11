@@ -1,0 +1,32 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - soil_fertility
+  - pest_control
+  - composting_methods
+  - crop_rotation
+
+responses:
+  utter_greet:
+    - text: "Hello! I’m your Organic Farming Assistant. How can I help you today?"
+
+  utter_goodbye:
+    - text: "Goodbye! Happy farming 🌱"
+
+  utter_soil_fertility:
+    - text: "To improve soil fertility, use organic compost, cover crops, and natural fertilizers."
+
+  utter_pest_control:
+    - text: "Use neem oil, garlic spray, and introduce beneficial insects like ladybugs for organic pest control."
+
+  utter_composting_methods:
+    - text: "You can try pit composting, vermicomposting, or heap composting using organic waste."
+
+  utter_crop_rotation:
+    - text: "Crop rotation helps prevent soil depletion and pests. Rotate crops yearly for best results."
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
