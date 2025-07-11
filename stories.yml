@@ -1,0 +1,32 @@
+version: "3.1"
+
+stories:
+- story: greet user
+  steps:
+    - intent: greet
+    - action: utter_greet
+
+- story: say goodbye
+  steps:
+    - intent: goodbye
+    - action: utter_goodbye
+
+- story: talk about soil
+  steps:
+    - intent: soil_fertility
+    - action: utter_soil_fertility
+
+- story: ask pest control
+  steps:
+    - intent: pest_control
+    - action: utter_pest_control
+
+- story: ask composting
+  steps:
+    - intent: composting_methods
+    - action: utter_composting_methods
+
+- story: ask crop rotation
+  steps:
+    - intent: crop_rotation
+    - action: utter_crop_rotation
